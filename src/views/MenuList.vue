@@ -25,7 +25,7 @@
   import MenuListNavbar from "../components/MenuListNavbar.vue";
   import { AkCirclePlus } from '@kalimahapps/vue-icons';
   import { AnOutlinedHeart } from '@kalimahapps/vue-icons';
-  import { fetchMenuData } from '@/services/api.ts'; 
+  import { fetchMenuData } from '@/services/api'; 
   import { useRoute } from 'vue-router'; 
 
   // Estructura de datos para el menu
