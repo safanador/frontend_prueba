@@ -7,7 +7,7 @@
     </div>
   </template>
   
-  <script>
+  <script  lang="ts">
   import SplashScreenView from './Components/SplashScreenView.vue';
   import DashboardView from './Components/DashboardView.vue';
   

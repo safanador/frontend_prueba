@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import MenuList from '../views/MenuList.vue'
-import OrderList from '../views/OrderList.vue'
-import RandomCocktail from '../views/RandomCocktail.vue'
+import MenuList from '@/views/MenuList.vue'
+import OrderList from '@/views/OrderList.vue'
+import RandomCocktail from '@/views/RandomCocktail.vue'
+import HomeView from '@/views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

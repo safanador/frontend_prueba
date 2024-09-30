@@ -20,7 +20,7 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import { ref, onMounted, onUnmounted } from 'vue';
   import MenuListNavbar from "../components/MenuListNavbar.vue";
   import { AkCirclePlus } from '@kalimahapps/vue-icons';

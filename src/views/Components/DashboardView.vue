@@ -17,7 +17,7 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import HomeNavbar from '@/components/HomeNavbar.vue'
   import ImageCarousel from "@/components/ImageCarousel.vue"
 

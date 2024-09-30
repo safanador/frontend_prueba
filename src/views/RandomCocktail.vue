@@ -30,7 +30,7 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import RandomCocktailNavbar from "../components/RandomCocktailNavbar.vue";
   import { ref, onMounted, computed } from 'vue'; // Asegúrate de importar 'computed' aquí
   import { fetchCocktailData } from '@/services/theCocktailApi.js';
