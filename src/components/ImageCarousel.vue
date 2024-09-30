@@ -13,7 +13,7 @@
     </Splide>
   </template>
 
-  <script lang="ts">
+  <script>
   import { Splide, SplideSlide } from '@splidejs/vue-splide';
   import '@splidejs/vue-splide/css';
   import { RouterLink  } from 'vue-router'; // Importa RouterLink

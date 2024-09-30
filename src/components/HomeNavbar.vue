@@ -13,7 +13,7 @@
     </nav>
   </template>
 
-  <script setup lang="ts">
+  <script setup>
     import { LaCocktailSolid } from '@kalimahapps/vue-icons';
     import { AnOutlinedShoppingCart } from '@kalimahapps/vue-icons';
     import { RouterLink  } from 'vue-router'; // Importa RouterLink

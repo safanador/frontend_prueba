@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/no-export-in-script-setup -->
-<script setup lang="ts">
+<script setup>
 import { RouterView } from 'vue-router'
 </script>
 

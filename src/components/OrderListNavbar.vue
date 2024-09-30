@@ -4,7 +4,7 @@
     </nav>
   </template>
 
-  <script setup lang="ts">
+  <script setup>
     import { BsArrowLeftShort } from '@kalimahapps/vue-icons';
 
     const goBack = () => {
