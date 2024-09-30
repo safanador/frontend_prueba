@@ -58,7 +58,7 @@
     color: white;
     font-size: 24px;
     margin-top: 25%;
-    margin-bottom: 20% 
+    margin-bottom: 10% 
   }
   
   .logo-text {
