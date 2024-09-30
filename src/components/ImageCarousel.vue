@@ -65,7 +65,6 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-bottom: 10%;
     }
     .menu-card img {
       width: 170px;
