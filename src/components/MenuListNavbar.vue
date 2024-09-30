@@ -10,7 +10,7 @@
     </nav>
   </template>
 
-  <script setup>
+  <script setup lang="ts">
     import { AkClipboard } from '@kalimahapps/vue-icons';    
     import { RouterLink  } from 'vue-router'; // Importa RouterLink
     import { BsArrowLeftShort } from '@kalimahapps/vue-icons';
