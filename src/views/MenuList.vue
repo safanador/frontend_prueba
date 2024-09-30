@@ -34,6 +34,21 @@
   const categoryRefs = ref({});
   const route = useRoute(); // Obtener la ruta actual
 
+  interface Dish {
+  id: string;
+  title: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+}
+
+interface MenuData {
+  lunch_menu?: Dish[];
+  appetizer_list?: Dish[];
+  cocktail_list?: Dish[];
+  wine_menu?: Dish[];
+}
+
  // Función para cargar los datos del menú
 const loadMenuData = async () => {
   try {
@@ -45,7 +60,7 @@ const loadMenuData = async () => {
 };
 
 // Función para filtrar los datos según la ruta
-const filterMenuData = (data) => {
+const filterMenuData = (data: MenuData[]) => {
     const category = route.path === '/lunchmenu' ? 'lunch_menu' :
                      route.path === '/appetizerlist'?'appetizer_list' :
                      route.path === '/cocktaillist' ? 'cocktail_list' :
