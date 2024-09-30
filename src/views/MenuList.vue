@@ -153,8 +153,8 @@ onUnmounted(() => {
   }
   
   .dish-image {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 12px;
     object-fit: cover;
   }
@@ -169,8 +169,8 @@ onUnmounted(() => {
   }
   
   .dish-title {
-    font-weight: bold;
-    font-size: x-large;
+    font-weight: 500;
+    font-size: medium;
   }
   
   .dish-price {
