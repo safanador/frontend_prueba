@@ -39,9 +39,9 @@
   }
 
   .icon, .clip-icon{
-        width: 42px;
-        height: 42px;
-        margin: 4px 20px;
+        width: 32px;
+        height: 32px;
+        margin: 2px 20px;
         z-index: 9001; /* Asegúrate de que los íconos también estén sobre otros elementos */
 
     }
