@@ -111,7 +111,7 @@ onUnmounted(() => {
   
   .category-title {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 8px;
     color: #00a99d;
@@ -169,8 +169,8 @@ onUnmounted(() => {
   }
   
   .dish-title {
-    font-weight: 500;
-    font-size: medium;
+    font-weight: 600;
+    font-size: large;
   }
   
   .dish-price {
