@@ -27,7 +27,7 @@
     background-color: black;
     opacity: 90%;
     color: white;
-    padding: 10px;
+    padding: 4px;
   }
   .title {
     font-size: x-large;
