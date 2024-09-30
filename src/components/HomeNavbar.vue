@@ -27,7 +27,7 @@
     background-color: black;
     opacity: 90%;
     color: white;
-    padding: 4px;
+    padding: 10px;
   }
   .title {
     font-size: x-large;
@@ -39,8 +39,8 @@
   }
 
   .icon{
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         margin: 4px 20px;
     }
   .icons {

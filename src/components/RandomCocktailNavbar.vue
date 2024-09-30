@@ -34,7 +34,7 @@
     background: rgb(1, 16, 14);
   }
   .title {
-    font-size: x-large;
+    font-size: large;
     color: #00a99d;
   }
 
