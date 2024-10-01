@@ -62,11 +62,12 @@
   .drink-card {
     background-color: #00100e;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    overflow-y: auto;
   }
   
   .drink-image {
