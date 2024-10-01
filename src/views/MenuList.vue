@@ -18,16 +18,18 @@
         </div>
       </div>
     </div>
+    <MenuListCategoriesNavbar :categories="categoryNames" :selectedCategory="selectedCategory" @update:selectedCategory="updateSelectedCategory"/>
   </template>
   
   <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue';
+  import { ref, computed , onMounted, onUnmounted, watch } from 'vue';
   import MenuListNavbar from "../components/MenuListNavbar.vue";
+  import MenuListCategoriesNavbar from '../components/MenuListCategoriesNavbar.vue';
   import { AkCirclePlus } from '@kalimahapps/vue-icons';
   import { AnOutlinedHeart } from '@kalimahapps/vue-icons';
   import { fetchMenuData } from '@/services/api'; 
   import { useRoute } from 'vue-router'; 
-
+  
   // Estructura de datos para el menu
   const menuData = ref({});
   const activeCategory = ref(null);
@@ -51,11 +53,26 @@ const filterMenuData = (data) => {
                      route.path === '/cocktaillist' ? 'cocktail_list' :
                      route.path === '/winemenu' ? 'wine_menu' : null;
   if (category && data[0][category]) {
-    //console.log(data[0][category])
+    console.log(data[0][category])
     menuData.value = data[0][category]; 
   } else {
     menuData.value = {}; // Si no hay categoría, asigna un objeto vacío
   }
+};
+
+// categories navbar logic
+    // It extracts the names from menuData 
+const categoryNames = computed(() => Object.keys(menuData.value));
+const selectedCategory = ref('');
+    // watch for changes in categoryNames and update selectedCategory
+watch(categoryNames, (newCategories) => {
+  if(newCategories.length > 0) {
+    selectedCategory.value = newCategories[0]; // set first category as default
+  }
+});
+// update selected category when user clicks on a category
+const updateSelectedCategory = (newCategory) => {
+selectedCategory.value = newCategory;
 };
 
 // Configura el scroll y carga los datos al montar el componente
