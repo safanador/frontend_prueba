@@ -10,7 +10,7 @@
       </div>
       <!-- Descripción -->
       <div class="drink-info">
-        <h2 class="title">Descripción</h2>
+        <h2 class="title">Preparación</h2>
         <p v-if="cocktailData.strInstructions">{{ cocktailData.strInstructions }}</p>
         <p v-else>No hay descripción disponible para esta bebida.</p>
       </div>
@@ -80,7 +80,7 @@
     font-size: x-large;
     font-weight: 700;
     color: #00a99d;
-
+    margin-bottom: 10px;
   }
   
   .drink-info {
@@ -90,12 +90,14 @@
   }
   
   .title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
     color: #00a99d;
     text-align: start;
   }
   .ingredients-title {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
     color: #00a99d;
   }
   
