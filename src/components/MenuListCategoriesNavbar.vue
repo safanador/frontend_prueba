@@ -9,6 +9,7 @@
         >
           <component :is="icon.component" class="navbar-icon" />
           <span class="icon-name">{{ icon.name }}</span>
+          <span class="divider"></span>
         </li>
       </ul>
     </nav>
@@ -98,6 +99,11 @@
   .navbar-item.selected span {
     color: #00a99d; /* Change this to the highlight color of your choice */
     font-weight: bold;
+  }
+  .navbar-item.selected .divider {
+    width: 90%;
+    margin: 0 auto 16px;
+    border: 1px solid #00a99d;
   }
   </style>
   
